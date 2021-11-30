@@ -170,7 +170,7 @@ button:hover{
         width: 100%;
         align-items: center;
         flex-wrap: wrap;
-        padding: 5px 0;
+        padding: 30px 0;
         margin-top: -30px;
     }
     /* logo */
@@ -189,12 +189,14 @@ button:hover{
     nav ul li{
         list-style-type: none;
         display: inline-block;
-        margin: 4px 8px;
+        margin-top: -20px;
+        margin: 1px 4px;
     }
     nav ul li a{
         color: gold;
         text-decoration: none;
         position: relative;
+        margin-top: -40px;
     }
     nav ul li a::after{
         content: '';
