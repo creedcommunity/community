@@ -4,8 +4,8 @@
     font-family: sans-serif;
 }
 html {
-  overflow-x: hidden;
-}
+    overflow-x: hidden;
+  }
 /* background */
 .main{
     width: 100%;
@@ -163,7 +163,7 @@ button:hover{
 @media only screen and (max-width: 800px){
     .main{
         width: 400px;
-        height: 155vh;
+        height: 100vh;
         background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(creedimg/bg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -175,13 +175,15 @@ button:hover{
         margin-left: 0px;
     }
     .text-box p{
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 900;
-        margin-left: 20px;
+        margin-left: 30px;
+        margin-top: -700px;
     }
     .text-box h1{
-        font-size: 70px;
-        line-height: 100px;
+        font-size: 40px;
+        margin-top: -900;
+        line-height: 50px;
         margin-left: 20px;
         color: transparent;
         -webkit-text-stroke-width: 1px;
@@ -207,7 +209,8 @@ button:hover{
         text-decoration: none;
         margin-top: 30px;
         padding: 10px 20px;
-        margin-right: 20px;
+        margin-left: 20px;
+        margin-right: 0px;
         border: 2px solid gold;
         cursor: pointer;
         width: 150px;
