@@ -167,7 +167,10 @@ button:hover{
         background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(creedimg/bg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        padding-bottom: 110px;
+        overflow: hidden;
     }
+    body { overflow: hidden; /* Hide scrollbars */ }
     .text-box{
         color:gold;
         position: absolute;
@@ -178,7 +181,7 @@ button:hover{
         font-size: 15px;
         font-weight: 900;
         margin-left: 30px;
-        margin-top: -700px;
+        margin-top: -600px;
     }
     .text-box h1{
         font-size: 40px;
