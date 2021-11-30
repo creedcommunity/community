@@ -212,7 +212,7 @@ button:hover{
     }
     .main{
         width: 400px;
-        height: 98vh;
+        height: 75vh;
         background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(creedimg/bg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
