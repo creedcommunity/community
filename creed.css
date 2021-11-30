@@ -293,7 +293,7 @@ nav ul li a{
     margin-left: 30px;
 }
 .text{
-    background: radial-gradient(gold,rgba(0, 0, 0, 0.342));
+    background: radial-gradient(gold,rgba(58, 57, 57, 0.342));
     width: 300px;
     height: 600px;
     text-align: center;
