@@ -269,7 +269,7 @@ nav .fa{
         position: relative;
         padding:30px;
         margin: -50px -20px ;
-        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.0.5);
+        box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.5);
         overflow: hidden;
         opacity: 55%;
         border-radius: 40px;
@@ -283,7 +283,7 @@ nav .fa{
     }
     #p1{
         font-weight: 700;
-        margin-left: -50px;
+        margin-left: -20px;
         text-align: left;
         font-size: 14px;
         color: black;
@@ -293,6 +293,4 @@ nav .fa{
         color: black;
     }
 }
-
-/* optimisation for 800px */
 
