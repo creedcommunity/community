@@ -3,47 +3,37 @@
     padding: 0;
     font-family: sans-serif;
 }
-html {
-    overflow: hidden;
-    overscroll-behavior: none;
-  }
-/* background */
-.main{
+.header{
+    min-height: 100vh;
     width: 100%;
-    height: 109vh;
-    background:url(creedimg/bg.jpg);
+    background-image:url(creedimg/bg.jpg);
 }
-/* navigation bar */
 nav{
     display: flex;
-    width: 100%;
+    padding: 2%  6%;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 5px 0;
-    margin-top: -70px;
 }
-/* logo */
-.logo{
+nav img{
     width: 200px;
-    cursor: pointer;
-    color: gold;
-}
-/* Listing */
-nav ul{
-    flex: 1;
-    text-align: right;
+    margin-top: -70px;
     padding-right: 30px;
 }
-/* nav-btn */
-nav ul li{
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
     list-style-type: none;
     display: inline-block;
-    margin: 10px 30px;
+    padding: 8px 12px;
+    position:relative;
+    margin-bottom: 80px;
 }
-nav ul li a{
-    color: gold;
+.nav-links ul li a{
     text-decoration: none;
-    position: relative;
+    font-size: 19px;
+    color: gold;
 }
 nav ul li a::after{
     content: '';
@@ -107,284 +97,49 @@ button{
 button:hover{
     background: yellow;
 }
-#heading{
-    color:rgb(22, 22, 22);
-    text-align: center;
-    margin: 0 auto 80px;
-    position: relative;
-    line-height: 60px;
-    font-family: 'Mukta', sans-serif;
+nav .fa{
+    display: none;
 }
-.main-1{
-    width: 100%;
-    height: 109vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(creedimg/bg.jpg);
-}
-.text{
-    background: radial-gradient(gold,rgba(0, 0, 0, 0.342));
-    width: 500px;
-    height: 560px;
-    position: relative;
-    text-align: center;
-    padding: 9px 10px;
-    margin: auto;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.0.5);
-    overflow: hidden;
-    opacity: 50%;
-}
-.btn{
-    background-color: black;
-    color: #fff;
-    text-decoration: none;
-    margin-top: 10px;
-    padding: 10px 20px;
-    margin-right: 20px;
-    border: 2px solid gold;
-    cursor: pointer;
-    width: 150px;
-    border-radius: 9px;
-    transition: 1s;
-}
-.btn:hover{
-    background: gold;
-    color: black;
-}
-#p1{
-    font-family:'Padauk', sans-serif;
-}
-.part{
-    color: gold;
-    text-align: center;
-}
-.choose{
-    color: gold;
-    text-align: center;
-
-}
-@media only screen and (max-width: 800px){
-    nav{
-        margin-left: -50px;
+@media(max-width:800px){
+    .header{
+        min-height: 100vh;
         width: 100%;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 9px 0;
-        margin-top: -30px;
-    }
-    /* logo */
-    .logo{
-        width: 100px;
-        cursor: pointer;
-        color: gold;
-    }
-    /* Listing */
-    nav ul{
-        flex: 1;
-        text-align: right;
-        padding-right: 20px;
-    }
-    /* nav-btn */
-    nav ul li{
-        list-style-type: none;
-        display: inline-block;
-        margin-top: -30px;
-        margin: 1px 9px;
-    }
-    nav ul li a{
-        color: gold;
-        text-decoration: none;
-        position: relative;
-        margin-top: -20px;
-        font-size: 15x;
-        margin-left: ;
-    }
-    nav ul li a::after{
-        content: '';
-        width: 0;
-        height: 4px;
-        position: absolute;
-        bottom: -8px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: gold;
-        transition: 0.1s;
-    }
-    nav ul li a:hover::after{
-        width: 50%;
-        border-radius: 3px;
-    }
-    .main{
-        width: 420px;
-        height: 90vh;
-        background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(creedimg/bg.jpg);
+        background-image:url(creedimg/bg.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
-        padding-bottom: 98px;
-        overflow: hidden;
     }
-    .text-box{
-        color:gold;
-        position: absolute;
-        bottom: -20%;
-        margin-left: 0px;
+
+    .nav-links ul li{
+        display: block;
+        padding: 0px 10px;
+        margin-top: 50px;
     }
-    .text-box p{
-        font-size: 15px;
-        font-weight: 900;
-        margin-left: 30px;
-        margin-top: -600px;
-    }
-    .text-box h1{
-        font-size: 40px;
-        margin-top: -900;
-        line-height: 50px;
-        margin-left: 20px;
-        color: transparent;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: gold;
-        background: url(creedimg/overlay.png);
-        -webkit-background-clip: text;
-        background-position: 0 0 ;
-        animation: back 25s linear infinite;
-    }
-    @keyframes back{
-        100%{
-            background-position: 2000px 0;
-        }
-    }
-    .text-box h3{
+    .nav-links ul li a{
+        color: black;
         font-size: 20px;
-        font-family:'Padauk', sans-serif;
-        margin-left: 20px;
     }
-    button{
-        background-color: black;
-        color: #fff;
-        text-decoration: none;
-        margin-top: 30px;
-        padding: 10px 20px;
-        margin-left: 20px;
-        margin-right: 0px;
-        border: 2px solid gold;
-        cursor: pointer;
-        width: 150px;
-        border-radius: 9px;
-        transition: 1.5s;
-    }
-    button:hover{
-        background: yellow;
-}
-span{
-    margin-left: 20px;
-}
-#heading{
-    color:rgb(22, 22, 22);
-    text-align: center;
-    margin: 0 auto 80px;
-    position: relative;
-    line-height: 60px;
-    font-family: 'Mukta', sans-serif;
-}
-.main-1{
-    width: 400px;
-    height: 200vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(creedimg/bg.jpg);
-}
-nav ul li a{
-    margin-left: 30px;
-}
-.text{
-    background: radial-gradient(gold,rgba(58, 57, 57, 0.342));
-    width: 300px;
-    height: 500px;
-    text-align: center;
-    padding: 3px 2px;
-    margin-top: 10px;
-    margin-left: 35px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    opacity: 50%;
-    font-size: 13px;
-}
-.btn{
-    background-color: black;
-    color: #fff;
-    text-decoration: none;
-    margin-top: 10px;
-    padding: 10px 20px;
-    margin-right: 20px;
-    border: 2px solid gold;
-    cursor: pointer;
-    width: 150px;
-    border-radius: 9px;
-    transition: 1s;
-}
-.btn:hover{
-    background: gold;
-    color: black;
-}
-#p1{
-    font-family:'Padauk', sans-serif;
-    margin-top: -70px;
-}
-.part{
-    color: gold;
-    text-align: center;
-}
-.choose{
-    color: gold;
-    text-align: center;
-
-}
-
-}
-@media only screen and (max-width: 600px){
-    nav{
-        margin-left: -20px;
-        width: 100%;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 30px, -20px;
-        margin-top: -30px;
-    }
-    /* logo */
-    .logo{
-        width: 90px;
-        cursor: pointer;
-        color: gold;
-    }
-    /* Listing */
-    nav ul{
-        margin-left: -30px;
-        text-align: right;
-        padding-right: 40px;
-    }
-    /* nav-btn */
-    nav ul li{
-        list-style-type: none;
-        display: inline-block;
-        margin-top: -20px;
-        margin: 1px 9px;
-        font-size: 10px;
-    }
-    nav ul li a{
-        color: gold;
-        text-decoration: none;
-        position: relative;
-        margin-top: -40px;
-    }
-    nav ul li a::after{
-        content: '';
-        width: 0;
-        height: 4px;
-        position: absolute;
-        bottom: -8px;
-        left: 50%;
-        transform: translateX(-50%);
+    .nav-links{
+        position:absolute;
         background: gold;
-        transition: 0.1s;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
     }
-    nav ul li a:hover::after{
-        width: 50%;
-        border-radius: 3px;
+    nav .fa{
+        display: block;
+        font-size: 22px;
+        margin:30px;
+        color: black;
+        cursor: pointer;
+    }
+    nav ul{
+        padding:30px;
+    }
+    #menu{
+        color: gold;
+        margin-bottom: 90px;
+        cursor: pointer;
     }
 }
